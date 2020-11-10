@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<style type="text/css">
+	.container h1{
+	background:#316ac0;
+		font-family:sans-serif;
+		font-size : 40px;
+		padding:40px 0px 0px 50px;
+		color: white;
+	}
+	.box{
+		position:absolute;
+		top:50%;
+		left:60%;
+		transform:translate(-50%,-50%);
+		width: 420px;
+		height:250px;
+		background:inherit;
+		box-sizing:border-box;
+		box-shadow:0 15px 25px rgba(0,0,0,.5);
+		border-radius: 10px;
+	}
+	
+	.box h2{
+	margin: 0 0 30px;
+	padding:0 ;
+	color:#323442;
+	text-align: center;
+	}
+	.box .inputBox{
+	
+	position:relative;
+	margin-right: 20px;
+	margin-left: 20px;
+	}
+	
+	.box .inputBox input{
+	
+	width:100%;
+	padding:10px 0;
+	font-size:16px;
+	color:grey;
+	letter-spacing:2px;
+	margin-bottom: 20px;
+	border-bottom:1px solid #fff;
+	outline:none;
+	background: transparent;
+	
+	}
+	.box .inputBox label{
+	font-family:sans-serif;
+	position: absolute;
+	top:0;
+	left:0;
+	margin-left:10px;
+	padding: 10px 0;
+	font-size:16px;
+	color:#323442;
+	pointer-events:none;
+	transition:.5s;
+	
+	}
+	.box .inputBox input:focus~label,
+	.box .inputBox input:valid~label
+	{
+		top:-25px;
+		left:0;
+		color:blue;
+		font-size: 12px;
+	}
+	.box input[type="submit"]{
+		background: transparent;
+		border:none;
+		outline:none;
+		color:#fff;
+		background:#03a9f4;
+		padding:10px 20px;
+		cursor: pointer;
+		border-radius: 5px;
+		margin-left: 20px;
+	}
+
+</style>
+</head>
+<body>
+<div class ="container">
+	<h1>SAFE BANK</h1>
+</div>
+	<form action="ChangePassword">
+	<div class = "box">
+	<h2>Please Enter your new password</h2>
+	
+			<div class ="inputBox">
+				<input type ="text" name ="npwd" required=""/>
+				<label>New Password</label>
+			</div>
+			
+			<div class="inputBox">
+				<input type = "password" name = "cpwd" required="">
+				<label>Confirm Password</label>
+			</div>
+
+				<input type="submit"/ value="Submit"/>
+	</div>
+	
+	
+	
+	
+	</form>
+</body>
+</html>

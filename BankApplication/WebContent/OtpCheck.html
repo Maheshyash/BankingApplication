@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.container{
+		background:#316ac0;
+		height: 100px;
+		
+	}
+	.container h1{
+		font-family:sans-serif;
+		font-size : 40px;
+		padding:40px 0px 0px 50px;
+		color: white;
+	}
+	.container1 {
+		width:360px;
+		height: 300px;
+		margin-left: 160px;
+		text-rendering:auto;
+	}
+	input[type="submit"]
+		{
+			border:none;
+			padding:7px 15px;
+			cursor: pointer;
+			outline: none;
+			background: #67c4f0;
+			color: #000;
+			font-size: 18px;
+			border-radius: 2px;
+		}
+</style>
+</head>
+<body>
+	<div class = "container">
+		<h1>Safe Bank</h1>
+	</div>
+	<div class="container1">	
+		<form action="Otp">
+			<p>Please Enter Your OTP</p><hr>
+			<div id="box1">
+				<input type = "text" name ="otp" placeholder ="OTP Number" required ="required">			
+			</div>
+			<br>
+			<div class="button">
+				<input type= "submit" value ="verify">
+			</div>
+			
+		</form>
+	</div>
+</body>
+</html>
